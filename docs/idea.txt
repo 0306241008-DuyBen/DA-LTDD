@@ -1,0 +1,39 @@
+﻿User
+* Đăng nhập
+* Đăng ký
+* Xếp hạng:
+* Sẽ có 5 bậc hạng, mỗi bậc sẽ có số điểm công đức cần để lên là 300.
+* 4 bậc đầu sẽ có 3 cấp độ. Mỗi cấp độ là 100 điểm, nếu đủ 100 điểm sẽ lên được hạng, riêng giác ngộ không có cấp.
+* Các bậc hạng gồm: 
+* Bậc 1: Khai Tâm (I,II,III)
+* Bậc 2: Tinh Anh  (I,II,III)
+* Bậc 3: Trụ Tâm  (I,II,III)
+* Bậc 4: Vô Lượng  (I,II,III)
+* Bậc 5: Giác Ngộ  
+* Điểm công đức: 
+* Dùng để lên hạng.
+* Năng lượng: 
+* Dùng để tham gia trả lời câu hỏi.
+* Câu hỏi: 
+* Mỗi câu hỏi sẽ tốn 1 năng lượng.
+* Trả lời sai sẽ mất 15 điểm công đức.
+* Điểm danh: 
+* Nhận 20 năng lượng mỗi ngày.
+* Bảng xếp hạng:
+* Hiển thị 20 người có điểm công đức cao nhất.
+* Kết bạn:
+* Theo dõi được điểm công đức của những người đã kết bạn.
+* Cài đặt:
+* Gồm các chức năng:
+* Thay đổi tên hiển thị.
+* Thay đổi mật khẩu tài khoản.
+* Bật/tắt nhạc nền.
+* Đăng xuất.
+Admin
+* Đăng nhập.
+* Cài đặt:
+* Gồm các chức năng:
+* Thay đổi mật khẩu tài khoản.
+* Đăng xuất.
+* Quản lý tài khoản người dùng: Có thể sửa, xóa người dùng.
+* Quản lý ngân hàng câu hỏi/câu trả lời. Có thể thêm, sửa, xóa các câu hỏi/câu trả lời.
