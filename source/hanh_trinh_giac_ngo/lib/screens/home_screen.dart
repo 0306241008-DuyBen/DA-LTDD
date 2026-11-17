@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hanh_trinh_giac_ngo/screens/hanh_trinh_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -59,7 +60,14 @@ class _HomeScreenState extends State<HomeScreen> {
                       icon: Image.asset('assets/images/DiemDanh.png'),
                     ),
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const HanhTrinhScreen(),
+                            ),
+                          );
+                      },
                       icon: Image.asset('assets/images/HanhTrinh.png'),
                     ),
                   ],
