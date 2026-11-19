@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:hanh_trinh_giac_ngo/screens/hanh_trinh_screen.dart';
+import 'package:hanh_trinh_giac_ngo/screens/bang_xep_hang_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -76,7 +77,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        bang_xep_hang(context);
+                      },
                       icon: Image.asset('assets/images/BangXepHang.png'),
                     ),
                     IconButton(
