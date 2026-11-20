@@ -1,4 +1,3 @@
-import 'package:hanh_trinh_giac_ngo/screens/welcome_screen.dart';
 import 'package:hanh_trinh_giac_ngo/screens/home_screen.dart';
 
 import 'package:material_ui/material_ui.dart';
@@ -102,7 +101,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     SizedBox(height: 16),
                     SizedBox(
                       width: 143,
-                      height: 40,
+                      height: 50,
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.push(
@@ -120,7 +119,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: const Text(
                           "Đăng nhập",
                           style: TextStyle(
-                            fontSize: 16,
+                            fontSize: 18,
                             fontWeight: FontWeight.bold,
                             color: Color(0xFFE4BE77),
                           ),
@@ -130,7 +129,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     SizedBox(height: 16),
                     SizedBox(
                       width: 143,
-                      height: 40,
+                      height: 50,
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.pop(context);
@@ -144,7 +143,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: const Text(
                           "Trở về",
                           style: TextStyle(
-                            fontSize: 16,
+                            fontSize: 18,
                             fontWeight: FontWeight.bold,
                             color: Color(0xFFE4BE77),
                           ),

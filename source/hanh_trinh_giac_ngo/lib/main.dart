@@ -1,6 +1,4 @@
-import 'package:hanh_trinh_giac_ngo/screens/login_screen.dart';
 import 'package:material_ui/material_ui.dart';
-import 'package:hanh_trinh_giac_ngo/screens/home_screen.dart';
 import 'package:hanh_trinh_giac_ngo/screens/welcome_screen.dart';
 
 

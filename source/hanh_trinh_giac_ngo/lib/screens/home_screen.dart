@@ -1,3 +1,4 @@
+import 'package:hanh_trinh_giac_ngo/screens/chon_chu_de_screen.dart';
 import 'package:hanh_trinh_giac_ngo/screens/dao_huu_screen.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:hanh_trinh_giac_ngo/screens/hanh_trinh_screen.dart';
@@ -69,7 +70,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 SizedBox(height: 410),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => const ChonChuDeScreen())
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.symmetric(horizontal: 80, vertical: 15),
                     backgroundColor: Color(0xFF956429),

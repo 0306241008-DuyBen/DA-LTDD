@@ -1,4 +1,3 @@
-import 'package:hanh_trinh_giac_ngo/screens/welcome_screen.dart';
 import 'package:material_ui/material_ui.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -27,7 +26,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     Image.asset(
                       "assets/images/logo.png",
                       width: 300,
-                      height: 200,
+                      height: 180,
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 24.0),
@@ -168,7 +167,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     SizedBox(height: 16),
                     SizedBox(
                       width: 143,
-                      height: 40,
+                      height: 50,
                       child: ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
@@ -181,7 +180,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         child: const Text(
                           "Đăng ký",
                           style: TextStyle(
-                            fontSize: 16,
+                            fontSize: 18,
                             fontWeight: FontWeight.bold,
                             color: Color(0xFFE4BE77),
                           ),
@@ -191,7 +190,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     SizedBox(height: 16),
                     SizedBox(
                       width: 143,
-                      height: 40,
+                      height: 50,
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.pop(context);
@@ -205,7 +204,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         child: const Text(
                           "Trở về",
                           style: TextStyle(
-                            fontSize: 16,
+                            fontSize: 18,
                             fontWeight: FontWeight.bold,
                             color: Color(0xFFE4BE77),
                           ),
