@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hanh_trinh_giac_ngo/screens/dao_huu_screen.dart';
 import 'package:hanh_trinh_giac_ngo/screens/hanh_trinh_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -27,24 +28,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     IconButton(
-                      onPressed: () {},
-                      icon: Stack(
-                        alignment: Alignment.center,
-                        children: [
-                          Image.asset('assets/images/Energy.png'),
-                          Padding(
-                            padding: EdgeInsets.only(top: 50),
-                            child: Text(
-                              '25000000',
-                              style: TextStyle(
-                                color: Color(0xFFE8C17D),
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const DaoHuuScreen(),
                           ),
-                        ],
-                      ),
+                        );
+                      },
+                      icon: Image.asset('assets/images/DaoHuu.png'),
                     ),
                     IconButton(
                       onPressed: () {},
@@ -57,38 +49,39 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     IconButton(
                       onPressed: () {},
-                      icon: Image.asset('assets/images/DiemDanh.png'),
+                      icon: Image.asset('assets/images/BangXepHang.png'),
                     ),
                     IconButton(
                       onPressed: () {
                         Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const HanhTrinhScreen(),
-                            ),
-                          );
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const HanhTrinhScreen(),
+                          ),
+                        );
                       },
                       icon: Image.asset('assets/images/HanhTrinh.png'),
                     ),
                   ],
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    IconButton(
-                      onPressed: () {},
-                      icon: Image.asset('assets/images/BangXepHang.png'),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Image.asset('assets/images/DaoHuu.png'),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 310),
-                IconButton(
+                SizedBox(height: 410),
+                ElevatedButton(
                   onPressed: () {},
-                  icon: Image.asset('assets/images/Play.png'),
+                  style: ElevatedButton.styleFrom(
+                    padding: EdgeInsets.symmetric(horizontal: 80, vertical: 15),
+                    backgroundColor: Color(0xFF956429),
+                    foregroundColor: Color(0xFFE8C17D),
+                    shadowColor: Colors.black,
+                    elevation: 5,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      side: BorderSide(color: Color(0xFFE8C17D), width: 2),
+                    ),
+                  ),
+                  child: Text(
+                    'CHƠI',
+                    style: TextStyle(color: Color(0xFFE8C17D), fontSize: 28),
+                  ),
                 ),
               ],
             ),
