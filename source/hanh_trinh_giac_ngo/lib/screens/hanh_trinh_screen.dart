@@ -1,3 +1,5 @@
+import 'package:hanh_trinh_giac_ngo/screens/chi_tiet_de.dart';
+import 'package:hanh_trinh_giac_ngo/screens/chi_tiet_lich_su_screen.dart';
 import 'package:material_ui/material_ui.dart';
 
 class HanhTrinhScreen extends StatefulWidget {
@@ -45,7 +47,12 @@ class _HanhTrinhScreenState extends State<HanhTrinhScreen> {
                     ),
                     elevation: 5,
                     child: Padding(
-                      padding: EdgeInsets.only(left: 15, right: 15, top: 5, bottom: 5),
+                      padding: EdgeInsets.only(
+                        left: 15,
+                        right: 15,
+                        top: 5,
+                        bottom: 5,
+                      ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -91,7 +98,14 @@ class _HanhTrinhScreenState extends State<HanhTrinhScreen> {
                             ),
                           ),
                           ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const ChiTietLichSuScreen(),
+                                ),
+                              );
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Color(0xFF956429),
                               foregroundColor: Color(0xFFE8C17D),
