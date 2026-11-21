@@ -1,3 +1,5 @@
+import 'package:hanh_trinh_giac_ngo/screens/change_password_screen.dart';
+import 'package:hanh_trinh_giac_ngo/screens/change_name.screen.dart';
 import 'package:hanh_trinh_giac_ngo/screens/quan_ly_tai_khoan_screen.dart';
 import 'package:hanh_trinh_giac_ngo/screens/welcome_screen.dart';
 import 'package:hanh_trinh_giac_ngo/screens/quan_ly_cau_hoi_screen.dart';
@@ -137,13 +139,28 @@ class _CaiDatScreenState extends State<CaiDatScreen> {
                         ),
                       ],
                     ),
-                    _buildSmallButton(label: 'Thay đổi', onPressed: () {}),
+                    _buildSmallButton(
+                      label: 'Thay đổi',
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => ManHinhDoiTen(),
+                          ),
+                        );
+                      },
+                    ),
                   ],
                 ),
               ),
 
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ManHinhDoiMatKhau()),
+                );
+              },
               child: _buildSettingBox(
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

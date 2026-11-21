@@ -1,3 +1,4 @@
+import 'package:hanh_trinh_giac_ngo/screens/play_screen.dart';
 import 'package:material_ui/material_ui.dart';
 
 class ChiTietDeScreen extends StatelessWidget {
@@ -25,7 +26,7 @@ class ChiTietDeScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Color(0xFF956429),
         title: Text(
-          'Hành Trình',
+          'Chi tiết đề',
           style: TextStyle(
             color: Color(0xFFE8C17D),
             fontSize: 24,
@@ -325,7 +326,16 @@ class ChiTietDeScreen extends StatelessWidget {
             width: double.maxFinite,
             height: 70,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => PlayScreen(
+                    deSo: deSo,
+                    chuDe: chuDe,
+                  ),
+                  ),
+                );
+              },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Color(0xFFE8C17D),
                 foregroundColor: Color(0xFFE8C17D),
