@@ -3,6 +3,7 @@ import 'package:hanh_trinh_giac_ngo/screens/dao_huu_screen.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:hanh_trinh_giac_ngo/screens/hanh_trinh_screen.dart';
 import 'package:hanh_trinh_giac_ngo/screens/bang_xep_hang_screen.dart';
+import 'package:hanh_trinh_giac_ngo/screens/cai_dat_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -41,7 +42,14 @@ class _HomeScreenState extends State<HomeScreen> {
                       icon: Image.asset('assets/images/DaoHuu.png'),
                     ),
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const CaiDatScreen(),
+                          ),
+                        );
+                      },
                       icon: Image.asset('assets/images/CaiDat.png'),
                     ),
                   ],
